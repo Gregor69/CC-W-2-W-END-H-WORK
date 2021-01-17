@@ -13,6 +13,10 @@ class Room:
     def checkout_guest(self, guest):
         self.guests.remove(guest)
 
+    def closeroom(self, guest):
+        if len(self.guests) == 5:
+            return "Room closed"
+     
     def song_count(self):
         return len(self.songs)
 
