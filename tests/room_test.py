@@ -8,12 +8,14 @@ class TestRoom(unittest.TestCase):
 
     def setUp(self):
         self.room = Room("Give us a tune")
+        self.room_2 = Room("Louder...")
         self.guest_1 = Guest("Alfie", 100.00)
         self.guest_2 = Guest("Henry", 100.00)
         self.guest_3 = Guest("Catriona", 100.00)
         self.guest_4 = Guest("Alison", 100.00)
         self.guest_5 = Guest("Jim", 100.00)
         self.song_1 = Song("Dry the Rain", "The Beta Band")
+        self.song_2 = Song("I Fought the Law", "The Clash") 
 
     def test_room_has_a_name(self):
         self.assertEqual("Give us a tune", self.room.name)
