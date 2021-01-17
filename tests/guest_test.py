@@ -6,8 +6,12 @@ from src.song import Song
 class TestGuest(unittest.TestCase):
 
     def setUp(self):
-        self.guest = Guest("Alfie")
-        self.song= Song("Dry the Rain", "The Beta Band")
+        self.guest = Guest("Alfie", 100.00)
+        # self.song = Song("Dry the Rain", "The Beta Band")
 
     def test_guest_has_a_name(self):
         self.assertEqual("Alfie", self.guest.name)
+
+    def test_guest_has_wallet(self):
+        self.assertEqual(100.00, self.guest.wallet)
+
