@@ -13,6 +13,10 @@ class Room:
     def checkout_guest(self, guest):
         self.guests.remove(guest)
 
+    def space_in_room(self, guest):
+        if len(self.guests) < 5:
+            return "Space in room"
+
     def closeroom(self, guest):
         if len(self.guests) == 5:
             return "Room closed"

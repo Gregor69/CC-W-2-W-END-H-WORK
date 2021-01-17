@@ -7,8 +7,7 @@ class TestGuest(unittest.TestCase):
 
     def setUp(self):
         self.guest = Guest("Alfie", 100.00)
-        # self.song = Song("Dry the Rain", "The Beta Band")
-
+       
     def test_guest_has_a_name(self):
         self.assertEqual("Alfie", self.guest.name)
 
